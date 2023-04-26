@@ -1,0 +1,43 @@
+.header-container {
+  padding: 10px 0;
+  .head-box {
+    .logo {
+      img {
+        height: 24px;
+      }
+    }
+    .nav-list {
+      .flex();
+      .nav-item {
+        .flex();
+        width: 60px;
+        height: 24px;
+        color: #fff;
+        margin: 0 5px;
+        position: relative;
+        font-size: 12px;
+        &:hover,
+        &.router-link-active {
+          span {
+            &:first-child {
+              &::before {
+                height: 4px;
+              }
+              &::after {
+                width: 4px;
+              }
+            }
+            &:last-child {
+              &::before {
+                height: 4px;
+              }
+              &::after {
+                width: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

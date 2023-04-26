@@ -1,0 +1,23 @@
+.max-center {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.module {
+  padding-top: 100px;
+}
+.flex(@justify-content:center,@align-items:center) {
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+@media screen and (max-width: 768px) {
+  .max-center {
+    width: calc(100% - 20px);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .module {
+    padding-top: 30px;
+  }
+}
